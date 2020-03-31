@@ -5,3 +5,13 @@ config LIBZYCOREC
 	depends on ARCH_X86_32 || ARCH_X86_64
 	select LIBNOLIBC if !HAVE_LIBC
 	select LIBUKTIME if !HAVE_LIBC
+
+config LIBZYDIS
+	bool "libzydis: x86/x86-64 disassembler"
+	default n
+	depends on ARCH_X86_32 || ARCH_X86_64
+	select LIBNOLIBC if !HAVE_LIBC
+	select LIBUKTIME if !HAVE_LIBC
+	select LIBZYCOREC
+	help
+		Fast and lightweight open-source x86/x86-64 disassembler library: https://zydis.re/
