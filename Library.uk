@@ -1,0 +1,6 @@
+name        := "zydis"
+description := "Zyan Core Library for C providing platform independent types, macros and a fallback for environments without a libc."
+gitrepo     := "https://github.com/zyantific/zycore-c.git"
+homepage    := "https://github.com/zyantific/zycore-c/"
+license     := "MIT"
+version     := 482298a sha256:5df9ed5a45d7dc71c6fc18405bc72811a99cff0a814c879177e0a11c58fc5ad6 https://github.com/zyantific/zycore-c/archive/482298a.tar.gz
